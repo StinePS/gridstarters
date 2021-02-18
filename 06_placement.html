@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		figure {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		img,
+		figcaption {
+			border: 1px solid;
+		}
+
+
+		/* Placering i grid items kan gøres vha.
+		vertikalt - align-self: start / center / end;
+		horisontalt - justify-self: start / center / end;
+		De 2 kan slås sammen til shortcode - place-self: vertikalt / horisontalt; */
+
+		figcaption {
+			place-self: start / end;
+		}
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	</style>
+</head>
+
+
+<body>
+	<figure>
+		<img src="kagemand.png" alt="">
+		<figcaption>Kagemand og kone</figcaption>
+	</figure>
+</body></html>
